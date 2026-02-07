@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jukebox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Jukebox 🎵</h1>
+        
+        <div class="input-section">
+            <input type="text" id="songName" placeholder="Song Name">
+            <input type="text" id="artist" placeholder="Artist">
+            <input type="text" id="author" placeholder="Author">
+            <input type="text" id="movie" placeholder="Movie">
+            <button onclick="addSong()">Add Song</button>
+        </div>
+
+        <div class="filter-section">
+            <input type="text" id="filter" placeholder="Search by Artist, Author, or Movie" oninput="filterSongs()">
+        </div>
+
+        <ul id="songList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
